@@ -1,0 +1,153 @@
+
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
+@import url("gambar.css");
+
+body{
+    background-color: #F2F5E2;
+    font-family: "Open Sans", sans-serif;
+
+}
+.header{
+    background: color F 8F 2E 5px;;
+    background-size: 100%;
+}
+.header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.header ul li{
+    float: right;
+}
+.header ul li a{
+    display: block;
+    color: #785D44;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+.header li a:hover{
+    background-color: dimgrey;
+
+}
+.header img{
+    float: left;
+}
+.header input[type=text]{
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 0;
+    border: none;
+    font-size: 17px;
+      
+      
+}
+/*banner*/
+.grid1 {
+    background-image: var(--gambar-background);
+    color: #785D44;
+
+    margin: 12px;
+    padding: 60px;
+    display: grid;
+    justify-items: center;
+    grid: 300px / auto auto;
+  
+    
+} 
+/*kolom*/ 
+.container {
+    justify-content: center;
+}
+.center{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.grid {
+    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 30px;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+
+}  
+.img {
+    object-fit: cover;
+}
+.grid > article{
+    box-shadow: 5px 2px black;
+    background:#F2F3E7;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+
+}
+.grid> article img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+
+}
+/*kolom3*/
+.gridaku {
+    display: grid;
+    grid: 260px/ auto auto auto  ;
+    text-align: center;
+    background-color:F8F2E5;
+}
+/*footer*/
+.footer{
+    display: grid;
+    margin: 5px;
+    grid:100px/ auto auto auto ;
+    padding: 40px;
+    display: center; 
+    text-align: center;
+    color: white;
+    background-color:#785D44;
+      
+
+}
+.footer-clean ul{
+    list-style-type: none;
+    margin: 24px;
+    padding: 0;
+    overflow: hidden;
+
+}
+.footer-clean ul li{
+    float: right;
+}
+.footer-clean ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+.footer-clean .section.item {
+ text-align:center;
+}
