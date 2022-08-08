@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
 @import url("gambar.css");
 
+
 body{
     background-color: #F2F5E2;
     font-family: "Open Sans", sans-serif;
@@ -58,6 +59,12 @@ body{
   
     
 } 
+/*diskon*/
+.diskon{
+    margin: 5px; padding: 3px; width:1530px;
+
+
+}
 /*kolom*/ 
 .container {
     justify-content: center;
@@ -150,4 +157,26 @@ body{
 }
 .footer-clean .section.item {
  text-align:center;
+}
+
+@media screen and (max-width:780px) {
+    .header,
+    .footer,
+    .footer-clean
+    {
+        width: 150%;
+        text-align: center;
+    }
+    .container,
+    .grid,
+    .section.item{
+        width: auto;
+        float: none;
+
+    }
+    .diskon{
+        width: auto;
+        float: auto;
+    }
+    
 }
