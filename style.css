@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans+hatton+montserrat");
 @import url("gambar.css");
 
 
@@ -27,6 +27,7 @@ body{
     color: #785D44;
     text-align: center;
     padding: 3px 6px;
+    width: 50%;
     text-decoration: none;
     
 }
@@ -36,6 +37,8 @@ body{
 }
 .header img{
     float: left;
+    width: 100px;
+    padding: 0;
 }
 .header input[type=text]{
     float: right;
@@ -62,9 +65,14 @@ body{
 } 
 /*diskon*/
 .diskon{
-    margin: 5px; 
-    padding: 3px; 
-    width:1530px;
+    color: #785D44;
+    background-color: #F2F5E2;
+
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    grid: 400px / auto auto;
 
 
 }
@@ -163,7 +171,7 @@ body{
     display: block;
     color: white;
     text-align: center;
-    padding:0 30px;
+    padding:5px 20px 90px;
     
     text-decoration: none;
 }
@@ -171,20 +179,32 @@ body{
  text-align:center;
 }
 
-@media screen and (max-width:0px) {
-    .section,
-    .header,
-    .img ul a,
-    input li a
+@media screen and (max-width:1000px) {
+    
+    .header img
+
     {
-        width: auto;
-        float: none;
-        padding: 6px 6px;
-        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    section > .header
+    {
+        margin: 12px 0;
+
     }
 
 
 }
+@media screen and (max-width:500px) {
+    .header ul li a{
+        margin-top: 0;
+        padding: 1px;
+        float: left;
+        grid-column: span 12;
+    }
+}
+
 
 @media screen and (max-width:780px) {
     .container{
@@ -192,30 +212,39 @@ body{
         float: none;
     }
     article,
-    .grid1,
-    .grid
+    
+    .grid,
     .right,
     .center{
         width: none;
         float: none;
-        grid-column: span 11/ auto;
+        grid-column: span 10/ auto;
     }
 
     .meet,
-    .gambar,
     .center{
         height: auto;
         float: none;
-        grid-column: span 1/ auto;
+        grid-column: span 9/ auto;
 
+    }
+    .grid1
+    {
+        grid-column: span 11;
+    }
+    .gambar{
+        padding: 0;
+        margin: auto;
+        grid-column: span 2/ auto;
+        width: auto;
     }
 
 }    
 @media (max-width:800px) {
     .diskon
     img{
-        padding: 10px;
-        width: 500px;
+        padding: 20px;
+        width: 330px;
       
     }
 
@@ -230,15 +259,20 @@ body{
     svg
     p{
         width: 100%;
+        float: 100%;
+        padding: auto;
+        margin: center;
+        
         
 
     }
     .footer-clean,
     .section.item 
     ul li a{
-        float: center;
-        text-align: center;
-        font-size: 10px;
+        float: left;
+        text-align: right;
+        font-size: auto;
+        grid-column: span 3;
 
     }
     
